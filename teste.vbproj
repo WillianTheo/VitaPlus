@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9BD3F59A-79B4-72E4-9E0D-FAF93FD9EB97}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>teste</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="components.json" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+    <None Include="supabase\config.toml" />
+    <None Include="tsconfig.app.json" />
+    <None Include="tsconfig.json" />
+    <None Include="tsconfig.node.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eslint.config.js" />
+    <Content Include="postcss.config.js" />
+    <Content Include="src\App.css" />
+    <Content Include="src\index.css" />
+    <Content Include="supabase\migrations\20251206134413_cad4ee63-a2c1-469c-907c-3f732d7747dd.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Index.tsx" />
+    <TypeScriptCompile Include="src\App.tsx" />
+    <TypeScriptCompile Include="src\components\layout\AppSidebar.tsx" />
+    <TypeScriptCompile Include="src\components\layout\DashboardLayout.tsx" />
+    <TypeScriptCompile Include="src\components\NavLink.tsx" />
+    <TypeScriptCompile Include="src\components\ui\accordion.tsx" />
+    <TypeScriptCompile Include="src\components\ui\alert-dialog.tsx" />
+    <TypeScriptCompile Include="src\components\ui\alert.tsx" />
+    <TypeScriptCompile Include="src\components\ui\aspect-ratio.tsx" />
+    <TypeScriptCompile Include="src\components\ui\avatar.tsx" />
+    <TypeScriptCompile Include="src\components\ui\badge.tsx" />
+    <TypeScriptCompile Include="src\components\ui\breadcrumb.tsx" />
+    <TypeScriptCompile Include="src\components\ui\button.tsx" />
+    <TypeScriptCompile Include="src\components\ui\calendar.tsx" />
+    <TypeScriptCompile Include="src\components\ui\card.tsx" />
+    <TypeScriptCompile Include="src\components\ui\carousel.tsx" />
+    <TypeScriptCompile Include="src\components\ui\chart.tsx" />
+    <TypeScriptCompile Include="src\components\ui\checkbox.tsx" />
+    <TypeScriptCompile Include="src\components\ui\collapsible.tsx" />
+    <TypeScriptCompile Include="src\components\ui\command.tsx" />
+    <TypeScriptCompile Include="src\components\ui\context-menu.tsx" />
+    <TypeScriptCompile Include="src\components\ui\dialog.tsx" />
+    <TypeScriptCompile Include="src\components\ui\drawer.tsx" />
+    <TypeScriptCompile Include="src\components\ui\dropdown-menu.tsx" />
+    <TypeScriptCompile Include="src\components\ui\form.tsx" />
+    <TypeScriptCompile Include="src\components\ui\hover-card.tsx" />
+    <TypeScriptCompile Include="src\components\ui\input-otp.tsx" />
+    <TypeScriptCompile Include="src\components\ui\input.tsx" />
+    <TypeScriptCompile Include="src\components\ui\label.tsx" />
+    <TypeScriptCompile Include="src\components\ui\menubar.tsx" />
+    <TypeScriptCompile Include="src\components\ui\navigation-menu.tsx" />
+    <TypeScriptCompile Include="src\components\ui\pagination.tsx" />
+    <TypeScriptCompile Include="src\components\ui\popover.tsx" />
+    <TypeScriptCompile Include="src\components\ui\progress.tsx" />
+    <TypeScriptCompile Include="src\components\ui\radio-group.tsx" />
+    <TypeScriptCompile Include="src\components\ui\resizable.tsx" />
+    <TypeScriptCompile Include="src\components\ui\scroll-area.tsx" />
+    <TypeScriptCompile Include="src\components\ui\select.tsx" />
+    <TypeScriptCompile Include="src\components\ui\separator.tsx" />
+    <TypeScriptCompile Include="src\components\ui\sheet.tsx" />
+    <TypeScriptCompile Include="src\components\ui\sidebar.tsx" />
+    <TypeScriptCompile Include="src\components\ui\skeleton.tsx" />
+    <TypeScriptCompile Include="src\components\ui\slider.tsx" />
+    <TypeScriptCompile Include="src\components\ui\sonner.tsx" />
+    <TypeScriptCompile Include="src\components\ui\switch.tsx" />
+    <TypeScriptCompile Include="src\components\ui\table.tsx" />
+    <TypeScriptCompile Include="src\components\ui\tabs.tsx" />
+    <TypeScriptCompile Include="src\components\ui\textarea.tsx" />
+    <TypeScriptCompile Include="src\components\ui\toast.tsx" />
+    <TypeScriptCompile Include="src\components\ui\toaster.tsx" />
+    <TypeScriptCompile Include="src\components\ui\toggle-group.tsx" />
+    <TypeScriptCompile Include="src\components\ui\toggle.tsx" />
+    <TypeScriptCompile Include="src\components\ui\tooltip.tsx" />
+    <TypeScriptCompile Include="src\components\ui\use-toast.ts" />
+    <TypeScriptCompile Include="src\contexts\AuthContext.tsx" />
+    <TypeScriptCompile Include="src\hooks\use-mobile.tsx" />
+    <TypeScriptCompile Include="src\hooks\use-toast.ts" />
+    <TypeScriptCompile Include="src\integrations_supabase\client.ts" />
+    <TypeScriptCompile Include="src\integrations_supabase\types.ts" />
+    <TypeScriptCompile Include="src\lib\utils.ts" />
+    <TypeScriptCompile Include="src\lib\validations.ts" />
+    <TypeScriptCompile Include="src\main.tsx" />
+    <TypeScriptCompile Include="src\pages\Appointments.tsx" />
+    <TypeScriptCompile Include="src\pages\Audit.tsx" />
+    <TypeScriptCompile Include="src\pages\Auth.tsx" />
+    <TypeScriptCompile Include="src\pages\Dashboard.tsx" />
+    <TypeScriptCompile Include="src\pages\Index.tsx" />
+    <TypeScriptCompile Include="src\pages\NotFound.tsx" />
+    <TypeScriptCompile Include="src\pages\Patients.tsx" />
+    <TypeScriptCompile Include="src\pages\Records.tsx" />
+    <TypeScriptCompile Include="src\vite-env.d.ts" />
+    <TypeScriptCompile Include="tailwind.config.ts" />
+    <TypeScriptCompile Include="vite.config.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\teste\v17\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
